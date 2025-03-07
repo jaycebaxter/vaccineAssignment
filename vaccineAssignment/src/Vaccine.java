@@ -3,9 +3,11 @@
 // Date:                March 6th, 2025
 // Description:         Retrieves and displays information about
 //                      COVID-19 vaccines.
+/**
+ * @author Jayce Johnson
+ */
 
 import java.time.LocalDate;
-import java.util.Scanner;
 
 // Vaccine class
 public class Vaccine {
@@ -23,10 +25,18 @@ public class Vaccine {
         return vaccineID;
     }
 
+    /**
+     *
+     * @param vaccineID
+     */
     public void setVaccineID(int vaccineID) {
         this.vaccineID = vaccineID;
     }
 
+    /**
+     *
+     * @return
+     */
     public String getVaccineName() {
         return vaccineName;
     }
@@ -81,6 +91,16 @@ public class Vaccine {
     } // Closes default constructor
 
     // Constructor with parameters
+
+    /**
+     *
+     * @param vaccineID
+     * @param vaccineName
+     * @param vaccineCost
+     * @param unitsAvail
+     * @param expiryDate
+     * @param handlingInstructions
+     */
     public Vaccine(int vaccineID, String vaccineName, double vaccineCost, int unitsAvail, LocalDate expiryDate, String handlingInstructions) {
         this.vaccineID = vaccineID;
         this.vaccineName = vaccineName;
