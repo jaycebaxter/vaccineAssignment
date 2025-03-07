@@ -80,7 +80,6 @@ public class Vaccine {
         // https://www.baeldung.com/java-creating-localdate-with-values
         expiryDate = LocalDate.of(1970, 1, 1);
         handlingInstructions = "None";
-
     } // Closes default constructor
 
 
@@ -92,7 +91,6 @@ public class Vaccine {
         this.unitsAvail = unitsAvail;
         this.expiryDate = expiryDate;
         this.handlingInstructions = handlingInstructions;
-
     } // Closes constructor with parameters
 
 
