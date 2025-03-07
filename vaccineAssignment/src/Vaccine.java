@@ -18,7 +18,6 @@ public class Vaccine {
     private LocalDate expiryDate;
     private String handlingInstructions;
 
-
     // Getters and setters
     public int getVaccineID() {
         return vaccineID;
@@ -68,7 +67,6 @@ public class Vaccine {
         this.handlingInstructions = handlingInstructions;
     }
 
-
     // Constructor that sets all variables to default value
     public Vaccine(){
         vaccineID = 0;
@@ -82,7 +80,6 @@ public class Vaccine {
         handlingInstructions = "None";
     } // Closes default constructor
 
-
     // Constructor with parameters
     public Vaccine(int vaccineID, String vaccineName, double vaccineCost, int unitsAvail, LocalDate expiryDate, String handlingInstructions) {
         this.vaccineID = vaccineID;
@@ -92,6 +89,5 @@ public class Vaccine {
         this.expiryDate = expiryDate;
         this.handlingInstructions = handlingInstructions;
     } // Closes constructor with parameters
-
 
 } // Closes the vaccine class

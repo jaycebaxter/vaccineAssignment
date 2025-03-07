@@ -44,7 +44,6 @@ public class Main {
         pfizerObject.setExpiryDate(LocalDate.of(2026, 04, 13));
         pfizerObject.setHandlingInstructions("Just have fun and be yourself :)");
 
-
         // If the user wants a table this is how we print it
         if (tableTrue == true) {
             System.out.println("    ID    |    NAME    | COST | AVAILABILITY |   EXPIRY   | HANDLING INSTRUCTIONS");
@@ -56,7 +55,6 @@ public class Main {
             System.out.print(pfizerObject.getHandlingInstructions() + "    ");
 
         } // Closes the if-table
-
 
         else {
             System.out.println("ID: " + pfizerObject.getVaccineID());
@@ -71,7 +69,6 @@ public class Main {
         Vaccine sputnikObject = new Vaccine(100957748, "Sputnik V", 3.75, 11, LocalDate.of(2026, 11, 6), "Do not");
         Vaccine zyCovObject = new Vaccine(100749351, "ZyCov-D", 15.90, 16, LocalDate.of(2027, 8, 15), "Can you tell I'm on the wikipedia page for covid vaccines I'm learning so much");
 
-
         // Adds all 3 vaccines to array or list or whatever
         Vaccine[] vaccineList = {pfizerObject, sputnikObject, zyCovObject};
 
@@ -85,9 +82,7 @@ public class Main {
             System.out.print(pfizerObject.getUnitsAvail() + "         ");
             System.out.print(pfizerObject.getExpiryDate() + "  ");
             System.out.print(pfizerObject.getHandlingInstructions() + "          ");
-
         }
-
 
         // Prints sputnik info
         System.out.print("\n" + sputnikObject.getVaccineID() + "   ");
@@ -104,10 +99,6 @@ public class Main {
         System.out.print(zyCovObject.getUnitsAvail() + "        ");
         System.out.print(zyCovObject.getExpiryDate() + "  ");
         System.out.print(zyCovObject.getHandlingInstructions() + "    ");
-
-
-
-
 
     } // Closes main method
 
