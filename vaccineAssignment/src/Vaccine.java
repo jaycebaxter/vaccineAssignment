@@ -5,6 +5,7 @@
 //                      COVID-19 vaccines.
 
 import java.time.LocalDate;
+import java.util.Scanner;
 
 // Vaccine class
 public class Vaccine {
