@@ -68,5 +68,19 @@ public class Vaccine {
         this.handlingInstructions = handlingInstructions;
     }
 
-    
+
+    // Constructor that sets all variables to default value
+    public Vaccine(){
+        vaccineID = 0;
+        vaccineName = "None";
+        vaccineCost = 0;
+        unitsAvail = 0;
+
+        // Stole because I couldn't figure this out
+        // https://www.baeldung.com/java-creating-localdate-with-values
+        expiryDate = LocalDate.of(1970, 1, 1);
+        handlingInstructions = "None";
+    }
+
+
 } // Closes the vaccine class
