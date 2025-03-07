@@ -20,7 +20,6 @@ public class Vaccine {
 
 
     // Getters and setters
-
     public int getVaccineID() {
         return vaccineID;
     }
@@ -74,14 +73,27 @@ public class Vaccine {
     public Vaccine(){
         vaccineID = 0;
         vaccineName = "None";
-        vaccineCost = 0;
+        vaccineCost = 0.0;
         unitsAvail = 0;
 
         // Stole because I couldn't figure this out
         // https://www.baeldung.com/java-creating-localdate-with-values
         expiryDate = LocalDate.of(1970, 1, 1);
         handlingInstructions = "None";
-    }
+
+    } // Closes default constructor
+
+
+    // Constructor with parameters
+    public Vaccine(int vaccineID, String vaccineName, double vaccineCost, int unitsAvail, LocalDate expiryDate, String handlingInstructions) {
+        this.vaccineID = vaccineID;
+        this.vaccineName = vaccineName;
+        this.vaccineCost = vaccineCost;
+        this.unitsAvail = unitsAvail;
+        this.expiryDate = expiryDate;
+        this.handlingInstructions = handlingInstructions;
+
+    } // Closes constructor with parameters
 
 
 } // Closes the vaccine class
